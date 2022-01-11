@@ -25,16 +25,27 @@
         </div>
         <div>
           <p style="font-size: 13pt;">
-            Fingerprinting, or traffic analysis in general, refers to using traffic metadata emitted by a network device to
-            gain relevant information. Using IoT device fingerprints we can infer activity on those devices,
-            identify their types, and detect any anomalies for security purposes. In this project, PINet aims to:
+            While there has been an explosion in prevalence of Smart Homes and IoT devices recently,
+            we have also seen that such devices pose a number of security and privacy risks. For example,
+            the Mirai botnet successfully compromised over 100 thousand IoT devices to engage them in 
+            Denial-of-Service (DoS) attacks. Currently, we are working on 2 ways to make smart homes more 
+            secure and private:
           </p>
           <p style="font-size: 13pt;">
-            1) Use programmable network architectures to perform IoT
-            Machine Learning-based traffic analysis on IoT devices and
+            1. To identify potentially compromised devices and mitigate their risks,
+            fingerprinting has emerged as a suitable candidate. However, existing approaches
+            are offline and server-based which makes them impractical in applications that require real-time 
+            fingerprinting. Therefore, our lab has committed to contribute to this body of research by utilizing
+            programmable switches to provide live fingerprinting with significantly less overhead as compared
+            to existing approaches.
           </p>
           <p style="font-size: 13pt;">
-            2) Obfuscate IoT traffic metadata to improve security and privacy of smart home IoT consumers
+            2. Malicious actors can passively analyze internet traffic emitted by IoT devices and apply IoT fingerprints
+            to identify events on IoT devices and profile the victim's behavior. IoT consumers may benefit greatly 
+            from obfuscation methods that can render their public internet traffic immune to traffic analysis. However,
+            existing defense mechanisms are too costly in performance and impractical in real-world deployment. 
+            Therefore, we aim to develop a more efficient and practical defense system that protects IoT users from
+            malicious actors. 
           </p>
         </div>
       </section>
