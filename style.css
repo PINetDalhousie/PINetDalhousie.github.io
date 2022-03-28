@@ -221,5 +221,24 @@ text-align: right;
 	text-align: center;
 }
 
+.job-container {
+	height: 40px;
+	width: 180px;
+	position: relative;
+	left: 35%;
+	background: #020a74;
+	border-radius: 7px;
+	color: white;
+}
+
+.job-announcement{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 
 
