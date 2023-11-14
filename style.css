@@ -88,9 +88,13 @@
     footer {
       padding: 25px;
     }
-    
+
+  .carousel-image {
+    width: auto; /* This will make the image width the same as the container width */
+    height: auto; /* This will set a fixed height */
+  }  
   .carousel-inner img {
-      width: 100%; /* Set width to 100% */
+      width: 100%; /* Set width to 100%*/
 	  height: 100%;
       margin: auto;
 	  display: block;
@@ -239,6 +243,3 @@ text-align: right;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-
-
-
