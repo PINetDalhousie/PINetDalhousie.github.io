@@ -88,20 +88,22 @@
     footer {
       padding: 25px;
     }
-
-  .carousel-image {
-    width: auto; /* This will make the image width the same as the container width */
-    height: auto; /* This will set a fixed height */
-  }  
+  /* This will make the image width the same as the container width */  
+  /* .carousel-image {
+    width: 100%; 
+    height: 500px; 
+    object-fit: contain;
+  }   */
   .carousel-inner img {
-      width: 100%; /* Set width to 100%*/
-	  height: 100%;
-      margin: auto;
+      /* width: 100%; */
+	  height: 50%;
+    object-fit: contain;
+    margin: auto;
 	  display: block;
-      border:transparent;
-      border-radius: 20px;
-      -webkit-box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
-      box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+    border:transparent;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
   }
     
 
