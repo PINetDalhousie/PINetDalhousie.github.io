@@ -15,6 +15,16 @@
 </style>
 
 <body>
+  <!-- Javascript to ensure carousel images have the same width and height -->
+  <script>
+    $(document).ready(function() {
+      var maxHeight = 0;
+      $('.carousel-inner img').each(function() {
+        maxHeight = Math.max(maxHeight, $(this).height());
+      });
+      $('.carousel-inner img').height(maxHeight);
+    });
+  </script>
 
   <div class="">
     <div class="container">
@@ -67,15 +77,31 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
           </ol>
       
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             
             <div class="item active">
+              <img src="img/homePage-carousel/pisa2024.jpeg" style="width:55%;">
+              <div class="carousel-caption">
+                <p>Dr. Haque visited ISTI-CNR at Pisa, Italy in May 2024</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/homePage-carousel/Conrado-NetSoft2024.jfif" style="width:55%;">
+              <div class="carousel-caption">
+                <p>Conrado joined NetSoft 2024 in Saint Louis, MO, USA</p>
+              </div>
+            </div>
+
+            <div class="item">
               <img src="img/homePage-carousel/digital-NS-award-win-2023.jpeg" style="width:55%;">
               <div class="carousel-caption">
-                <p>Dr. Haque wins Digital NS award 2022</p>
+                <p>Dr. Haque won Digital NS award 2022</p>
               </div>
             </div>
           
@@ -168,6 +194,9 @@
             <p>
             <ul>
               <li>
+                May 2024: Dr. Haque gave a seminar talk at ISTI-CNR, Pisa, Italy. Find the corresponding <a href="http://www.sobigdata.eu/blog/when-system-specialist-meets-big-data-experts">blog</a> here.
+              </li>
+              <li>
                 Mar 2024: Our proposal "Multi-disciplinary Approach to Research, Education, and Training in Cybersecurity for Emerging Technologies" received the <span style="color:red;">NSERC CREATE grant</span>.
               </li>
               <li>
@@ -183,7 +212,7 @@
                 Sept 2023: Dr. Haque will give a keynote at <a href="https://www.comsnets.org/minds_workshop.html">IEEE Workshop on Machine Intelligence in Networked Data and Systems (MINDS)</a> in January 2024.
               </li>
               <li>
-                June 2023: "Preventing Discriminatory Decision-Making in Evolving Data Streams" received the best paper award at <a href="https://facctconference.org/">ACM Conference on Fairness, Accountability, and Transparency (FAccT)</a>. 
+                June 2023: "Preventing Discriminatory Decision-Making in Evolving Data Streams" received the <span style="color: red;">best paper award </span>at <a href="https://facctconference.org/">ACM Conference on Fairness, Accountability, and Transparency (FAccT)</a>. 
               </li>
 
               <br>
@@ -211,11 +240,11 @@
         </li>
         <li>
           PoirIoT: Fingerprinting IoT Devices at Tbps Scale, accepted at IEEE/ACM Transactions on Networking 2024.
-          <!-- <a href="#">[Paper]</a> -->
+          <a href="https://ieeexplore.ieee.org/abstract/document/10520716?casa_token=cf2lrEb5sL0AAAAA:hA_NjNYmN6t6T4242nEP5zLq2nwM1BjWndL0ycpjUTHtnNQIUlAi6N54s92wowZS6Or7H2Rk6w">[Paper]</a>
         </li>
         <li>
           Learn to Compress (LtC): Efficient Learning-based Streaming Video Analytics, IEEE/IFIP NOMS 2024.
-          <a href="https://arxiv.org/abs/2307.12171">[Paper]</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10574920?casa_token=ALFCSnWUo7IAAAAA:CaUXzcCfu5JiXEfln_QdG7eq2s4P-OItX2EYfCRE68xgJLWuPZAESKRRG65GanVqMxy4fM5cOQ">[Paper]</a>
         </li>
         <li>
           On the (dis)Advantages of Programmable NICs for Network Security Services, IEEE/IFIP Networking Conference 2023.
@@ -227,7 +256,7 @@
         </li>
         <li>
           Fast Prototyping of Distributed Stream Processing Applications with stream2gym, IEEE ICDCS 2023.
-          <a href="papers/2023/MonzurulICDCS/stream2gym.pdf">[Paper]</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10272479?casa_token=U_uhJP6QNgwAAAAA:s5x6e8GXuH92DJ0EnaaD-1phV0oYsf1VJU8IIm0vrEyeybptWfvYqqgQoy0m4WJs2eViCxu69Q">[Paper]</a>
         </li>
         <li>
           A Deep Neural Network-based Communication Failure Prediction Scheme in 5G RAN, IEEE TNSM 2022.
@@ -251,7 +280,7 @@
         </li>
         <li>
           IoT Device Fingerprinting on Commodity Switches, IEEE/IFIP NOMS 2022.
-          <a href="papers/2021/poiriot.pdf">[Paper]</a>
+          <a href=href="https://ieeexplore.ieee.org/abstract/document/9789865?casa_token=7JAM9b8Rx6IAAAAA:DtU9UBmOvbkrKmSvXEhOVFOq3ZAE_HNaMjiZ7stW538ku72EypZA3qKz1u3cbdh6Miks-wapMg">[Paper]</a>
         </li>
         <!-- <li>
           On Network-accelerated ML-based Distributed Computer Vision Systems, IEEE ICPADS 2021.
