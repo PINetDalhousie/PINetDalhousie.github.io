@@ -233,6 +233,9 @@
             <p>
             <ul>
               <li>
+                Apr 2025: Dr. Haque bacame part of the Canada First Research Excellence Fund (CFREF)-funded project, <a href="https://www.concordia.ca/research/volt-age/initiatives/impact-programs.html">Securing Smart Environments</a>, led by the University of Calgary, Concordia University, and Dalhousie University..
+              </li>
+              <li>
                 Feb 2025: Dr. Haque received the <span style="color:green;">IEEE WICE outstanding mentoring award 2025</span>.
               </li>
               <li>
@@ -263,6 +266,18 @@
       <h3 style="background: coral;text-indent: 20px ; border-radius: 30px;">Recent publications</h3>
       <p>
       <ul>
+        <li>
+          On the Deployment Feasibility of Message Oriented Middlewares in Mission-critical Applications, accepted at IEEE Global Communications Conference, 2025.
+          <a href="papers/2025/MOM-GlobeCom.pdf">[Paper]</a>
+        </li>
+        <li>
+          streamline: Accelerating Deployment and Assessment of Real-time Big Data Systems, accepted at IEEE Transactions on Parallel and Distributed Systems, 2025.
+          <a href="papers/2025/streamline.pdf">[Paper]</a>
+        </li>
+        <li>
+          A Generalized GNN-Transformer-based Radio Link Failure Prediction Framework in 5G RAN, accepted at IEEE Transactions on Machine Learning in Communications and Networking, 2025.
+          <a href="https://ieeexplore.ieee.org/abstract/document/11018489">[Paper]</a>
+        </li>
         <li>
           It Works (only) on My Machine: A Study on Reproducibility Smells in Ansible Scripts, accepted at ACM/IEEE Conference on Mining Software Repositories (MSR) 2025.
           <a href="https://tusharma.in/preprints/MSR2025_REDUSE.pdf">[Paper]</a>
@@ -366,9 +381,31 @@
     <img src="img/sponsors/intel-logo.png" width="100" height="100">
     <img src="img/sponsors/drdc-logo.png" width="150" height="100">
     <img src="img/sponsors/generalDynamics-logo.png" width="200" height="100">
-    <footer style="text-align: center;"> Copyright © 2023 PINet Lab Dalhousie University
     </footer>
     </div>
+
+  <!-- Include footer -->
+  <div id="footer-placeholder"></div>
+  
+  <script>
+    // Alternative approach using fetch
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading footer:', error);
+        // Fallback footer if loading fails
+        document.getElementById('footer-placeholder').innerHTML = 
+          '<footer style="text-align: center;">Copyright © 2025 PINet Lab Dalhousie University</footer>';
+      });
+  </script>
 
 </body>
 </html>

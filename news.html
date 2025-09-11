@@ -170,8 +170,14 @@
                 </p>
             </dl>
 
-            <footer style="text-align: center;"> Copyright © 2023 PINet Lab Dalhousie University
-            </footer>
+            <!-- Include footer -->
+            <div id="footer-placeholder"></div>
+            
+            <script>
+              $(document).ready(function() {
+                $("#footer-placeholder").load("footer.html");
+              });
+            </script>
 
 </body>
 
